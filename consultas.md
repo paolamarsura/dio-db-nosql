@@ -17,7 +17,7 @@ $or​
 $not
 
 
-## Operadores Comparação
+## Operadores Comparação (antes do : é como é utilizado no MongoDB e após no JS)
 
 $eq: ==​
 
@@ -46,6 +46,11 @@ Ordenar os resultados de uma consulta com base em um ou mais campos.
 ## Limitação
 
 Limitar o número de documentos retornados em uma consulta.
+
+## Paginação (skip -> quanto registros serão ignorados, limit -> quantos serão mostrados)
+
+db.usuarios.find().skip(10).limit(5)
+
 
 
 
